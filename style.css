@@ -1,138 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Handjet:wght@300;400&family=Inter:wght@300;500;700&family=Quicksand:wght@300;500;700&display=swap');
-
-*
-{
-    
-    box-sizing: border-box;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-html 
-{
-    font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Handjet', cursive;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Quicksand', sans-serif;
-    background-color: #0A6EBD;
-    color: white;
-}
-
-#selecciona-mascota
-{   
+body {
+    font-family: Arial, sans-serif;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
 
-.titulo
-{
-    margin-top: 30px;
-    border-bottom: 3px solid #5A96E3;
-    padding: 1px;
-    font-family: 'handjet';
-    font-size: 3.6rem;
+.titulo, .subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.subtitulo
-{
-    margin: 40px 0 20px 0;
-    border-bottom: 2px solid #5A96E3;
-    padding: 0 10px;
-    font-family: 'handjet';
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.tarjetas
-{
-    width: 100vw;
-    height: auto;
+.tarjetas {
     display: flex;
-    justify-content: space-between;
-    margin: 0 10px;
+    justify-content: center;
+    gap: 20px;
 }
 
-.tarjeta-mascota
-{
-    width: 33vw;
-    height: auto;
-    background-color: #5A96E3;
-    text-align: center; 
+.tarjeta-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ccc;
     border-radius: 10px;
-    font-family: 'handjet';
-    font-size: 2.4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
-.tarjetas p
-{
+.tarjeta-mascota:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-mascota img {
+    max-width: 100%;
+    height: auto;
     margin-top: 10px;
 }
 
-.tarjetas img
-{
-    width: 20vw;
-}
-
-#selecciona-mascota input
-{
-    display: none;
-}
-
-#seleccionarMascotaBoton
-{
-    margin-top: 60px;
-    width: 200px;
-    height: 50px;
-    background-color: #085591;
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
     color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-}
- 
-#hipodoge:checked + .tarjeta-mascota,
-#capipepo:checked + .tarjeta-mascota,
-#ratigueya:checked + .tarjeta-mascota {
-    background-color: #085591;
-    border: #5A96E3 2px solid;
+    transition: background-color 0.3s;
 }
 
-
-#selecciona-poder
-{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+button:hover {
+    background-color: #0056b3;
 }
 
-#reintentar
-{
-    display: flex;
-    justify-content: center;
+.divVidas {
+    text-align: center;
+    margin-top: 20px;
 }
 
-
-
-
-.divVidas
-{
-    display: flex;  
-    gap: 50px;
+#reintentar {
+    text-align: center;
+    margin-top: 20px;
 }
 
-
-
-#mensajes
-{  
-    display: flex;
-    height: auto;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+#mensajes {
+    text-align: center;
+    margin-top: 20px;
 }
-
