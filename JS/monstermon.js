@@ -122,10 +122,11 @@ function crearMensaje ()
     let mensajeSeccion = document.getElementById('mensajes')
     let parrafo = document.createElement('p')
 
-    parrafo.innerHTML = 'Tu mascota ataco con ' + ataqueJugador +', la mascota del enemigo ataco con ' + ataqueEnemigo +' El resultado es ' + resultadoPelea
+    parrafo.innerHTML = 'Tu mascota atacó con ' + ataqueJugador + ', la mascota del enemigo atacó con ' + ataqueEnemigo + '.<br>El resultado es ' + resultadoPelea
 
     mensajeSeccion.appendChild(parrafo)
 }
+
 
 function pelea()
 {
